@@ -1,0 +1,44 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "change the button look and feel",
+      "status": "to do",
+      "description": "this should look like in the mocks look at the picture"
+    },
+    {
+      "id": 2,
+      "name": "change the background on about page",
+      "status": "in progress",
+      "assignee": "Gregory Peck",
+      "description": "background should have color #fffffa"
+    },
+    {
+      "id": 3,
+      "name": "add the accordion to section about on main page",
+      "status": "done",
+      "assignee": "Jacek Placek",
+      "description": "accordion should have all the information that is currently displayed in the table"
+    },
+    {
+      "id": 4,
+      "name": "change the table on pricing page",
+      "status": "done",
+      "assignee": "Johann Strauss",
+      "description": "table header should have higher padding and darker background color"
+    },
+    {
+      "id": 5,
+      "name": "add user authentication using aws amplify",
+      "status": "in review",
+      "assignee": "Jon Hamm",
+      "description": "use the aws official documentation"
+    },
+    {
+      "id": 6,
+      "name": "add the general button component",
+      "status": "to do",
+      "description": "this should act as a button abstract from where all buttons should inherit the main features and behaviors"
+    }
+  ]
+}
