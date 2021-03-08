@@ -3,10 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { incrementCounter, decrementCounter } from "../redux/ducks/counter";
 
 const Counter = () => {
-  const count = useSelector(state => {
-    console.log(state.counter.counter);
-    return state.counter.counter;
-  });
+  const count = useSelector(state => state.counter.counter);
   const dispatch = useDispatch();
   return (
     <div>
