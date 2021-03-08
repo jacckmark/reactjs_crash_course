@@ -1,8 +1,8 @@
 import "./App.css";
 import Header from "./components/Header";
-import Tasks from "./components/Tasks";
-import About from "./components/About";
-import Shop from "./components/Shop";
+import Tasks from "./pages/Tasks";
+import About from "./pages/About";
+import Shop from "./pages/Shop";
 import React, { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 

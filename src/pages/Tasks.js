@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Task from "./Task";
-import Button from "./Button";
+import Task from "../components/Task";
+import Button from "../components/Button";
 
 const Tasks = ({ tasks, onDelete }) => {
   const clickBtn = () => {
