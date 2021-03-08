@@ -1,8 +1,10 @@
 import "./App.css";
 import Header from "./components/Header";
-import Button from "./components/Button";
 import Tasks from "./components/Tasks";
+import About from "./components/About";
+import Shop from "./components/Shop";
 import React, { useState, useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
@@ -40,10 +42,6 @@ const App = () => {
     setTasks([...tasks, data]);
   };
 
-  const clickBtn = () => {
-    console.log("clicked button");
-  };
-
   useEffect(() => {
     (async function () {
       const tasks = await getTasks();
@@ -54,8 +52,11 @@ const App = () => {
   return (
     <div className="App">
       <Header title="myApp" />
-      <Button color="success" text="go to apps" onClick={clickBtn} />
-      <Tasks tasks={tasks} onDelete={removeTask} />
+      <Switch>
+        <Route path="/about" component={About} />
+        <Route path="/shop" component={Shop} />
+        <Route path="/" render={() => <Tasks tasks={tasks} onDelete={removeTask} exact />} />
+      </Switch>
     </div>
   );
 };

@@ -1,10 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Task from "./Task";
+import Button from "./Button";
 
 const Tasks = ({ tasks, onDelete }) => {
+  const clickBtn = () => {
+    console.log("clicked button");
+  };
   return (
     <div className="container">
+      <h4 className="mt-3">Currently there are no tasks</h4>
+      <Button color="success" text="go to apps" onClick={clickBtn} />
       {tasks.map((task, index) => (
         <Task
           key={index}
