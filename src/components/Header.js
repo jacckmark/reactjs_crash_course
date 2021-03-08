@@ -6,9 +6,9 @@ const Header = ({ title }) => {
   return (
     <nav className="navbar navbar-light bg-light">
       <div className="container-fluid d-flex">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           {title}
-        </a>
+        </Link>
         <div className="d-flex justify-self-end">
           <Link className="mr-3" to="/">
             Home
