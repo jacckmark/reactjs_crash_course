@@ -7,10 +7,10 @@ const Counter = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <h4>The couter:</h4>
       <div className="row">
-        <div className="col-4 offset-4">
-          <div className="row justify-content-center">
+        <h4>The couter:</h4>
+        <div className="row justify-content-center">
+          <div className="col-4 offset-4">
             <button className="btn btn-danger" onClick={() => dispatch(decrementCounter())}>
               -
             </button>
